@@ -61,7 +61,7 @@ enum {
 #define NO_DMA_TRANSACTION_DATA_SIZE 32 
 
 // default pcd8544 wiring and SPI configuration
-#define PCD8544_PIN_NUM_CS   4
+#define PCD8544_PIN_NUM_CS   5
 #define PCD8544_PIN_NUM_DC   16
 #define PCD8544_PIN_NUM_RST  17
 #define PCD8544_PIN_NUM_MOSI 23
@@ -69,7 +69,7 @@ enum {
 #define PCD8544_PIN_NUM_MISO 19
 #define PCD8544_CLOCK_SPEED_HZ (4*1000*1000)   // SPI Clock freq=4 MHz
 #define PCD8544_SPI_MODE 0
-#define PCD8544_DMA DMA_CH2                     // default DMA channel = 1
+#define PCD8544_DMA DMA_CH1                     // default DMA channel = 1
 
 // SPI HOST, only HSPI or VSPI
 #define PCD8544_HOST VSPI_HOST
