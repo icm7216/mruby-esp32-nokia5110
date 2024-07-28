@@ -604,7 +604,7 @@ mrb_mruby_esp32_nokia5110_gem_init(mrb_state* mrb)
   mrb_define_method(mrb, pcd8544, "display", pcd8544_spi_display, MRB_ARGS_NONE());
 
   // pcd8544 spi method
-  mrb_define_method(mrb, pcd8544, "_init", pcd8544_spi_init, MRB_ARGS_NONE());
+  mrb_define_method(mrb, pcd8544, "_init", pcd8544_spi_init, MRB_ARGS_REQ(9));
   // mrb_define_method(mrb, pcd8544, "initialize_copy", spi_init_copy, MRB_ARGS_REQ(1));
   mrb_define_method(mrb, pcd8544, "config?", spi_view_config, MRB_ARGS_NONE());
 
